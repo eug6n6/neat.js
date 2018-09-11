@@ -1,0 +1,35 @@
+
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="graph/alchemy.min.css">
+</head>
+<body>
+ <div id="alchemy" class="alchemy"></div>
+<script type="text/javascript" src="graph/scripts/vendor.js"></script>
+<script type="text/javascript" src="graph/alchemy.min.js"></script>
+
+<script type="text/javascript">
+	
+ const some_data = {
+	"nodes": [{"id":0, "type":"input"},{"id":1, "type":"input"},{"id":2, "type":"input"},{"id":3, "type":"input"},{"id":4, "type":"output"},{"id":5, "type":"output"},{"id":6, "type":"output"},{"id":14, "type":"hidden"},{"id":35, "type":"hidden"},{"id":58, "type":"hidden"},{"id":71, "type":"hidden"},{"id":121, "type":"hidden"},{"id":221, "type":"hidden"},{"id":241, "type":"hidden"},{"id":253, "type":"hidden"},{"id":316, "type":"hidden"},{"id":332, "type":"hidden"},{"id":450, "type":"hidden"}],
+	"edges": [{"source":"0", "target":"4", "caption":"0.44772"},{"source":"2", "target":"4", "caption":"0.00020"},{"source":"3", "target":"4", "caption":"2.60959"},{"source":"2", "target":"5", "caption":"0.11485"},{"source":"3", "target":"5", "caption":"-0.05318"},{"source":"0", "target":"6", "caption":"-0.00220"},{"source":"2", "target":"6", "caption":"0.00007"},{"source":"3", "target":"6", "caption":"0.18973"},{"source":"1", "target":"14", "caption":"0.19539"},{"source":"1", "target":"35", "caption":"0.14876"},{"source":"35", "target":"4", "caption":"-3.62286"},{"source":"0", "target":"58", "caption":"-0.94522"},{"source":"58", "target":"5", "caption":"-0.60627"},{"source":"1", "target":"71", "caption":"-0.00796"},{"source":"71", "target":"6", "caption":"0.03865"},{"source":"58", "target":"121", "caption":"-0.98674"},{"source":"121", "target":"5", "caption":"0.00084"},{"source":"3", "target":"221", "caption":"-0.00319"},{"source":"221", "target":"5", "caption":"0.20813"},{"source":"58", "target":"241", "caption":"-0.02016"},{"source":"241", "target":"121", "caption":"-0.01579"},{"source":"0", "target":"253", "caption":"-0.31681"},{"source":"253", "target":"6", "caption":"-1.67539"},{"source":"2", "target":"241", "caption":"1.00634"},{"source":"1", "target":"253", "caption":"-0.74746"},{"source":"2", "target":"316", "caption":"1.75756"},{"source":"316", "target":"6", "caption":"-0.37482"},{"source":"332", "target":"35", "caption":"0.12191"},{"source":"71", "target":"450", "caption":"1.00000"},{"source":"450", "target":"332", "caption":"0.20948"}]
+  };
+
+alchemy.begin({
+	"dataSource": some_data,
+	"nodeTypes": {"type": ["input", "output", "hidden"]},
+ 	"nodeStyle": {
+        "input": {
+            color: "green",
+        },
+        "hidden":{
+            color: "blue",
+        },
+        "output": {
+            color: "red"
+        }
+    },
+})
+</script>
+</body>
+</html>
