@@ -76,3 +76,6 @@ While algorithm is executed, short information about each epoch is displayed:
 
 Resulting Neural Network is saved in HTML file that shows its structure including all enabled connections and weights:
 
+![iris](https://raw.githubusercontent.com/eug6n6/neat.js/master/result/screenshots/iris.png)
+
+![xor](https://raw.githubusercontent.com/eug6n6/neat.js/master/result/screenshots/xor.png)
